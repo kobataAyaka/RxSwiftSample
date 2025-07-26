@@ -19,39 +19,42 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids_background" translatesAutoresizingMaskIntoConstraints="NO" id="tSf-oy-zgt">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-LD-pvT">
-                                <rect key="frame" x="175" y="303" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-9W-iR4">
-                                <rect key="frame" x="141" y="366" width="112" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Plus Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-S4-BnI">
-                                <rect key="frame" x="134" y="443" width="125" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Minus Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-ZE-UuP">
-                                <rect key="frame" x="135" y="518" width="123" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reset Button"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GxQ-bS-wLG">
+                                <rect key="frame" x="134" y="304.33333333333331" width="125" height="243.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-LD-pvT">
+                                        <rect key="frame" x="42" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-9W-iR4">
+                                        <rect key="frame" x="7" y="60.333333333333371" width="111.33333333333333" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Plus Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-S4-BnI">
+                                        <rect key="frame" x="0.0" y="134.66666666666669" width="125" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Minus Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-ZE-UuP">
+                                        <rect key="frame" x="1.3333333333333428" y="209.00000000000006" width="122.33333333333333" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="tSf-oy-zgt" secondAttribute="bottom" id="R7h-Ib-GVA"/>
-                            <constraint firstItem="tSf-oy-zgt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tr6-02-Hmo"/>
-                            <constraint firstAttribute="trailing" secondItem="tSf-oy-zgt" secondAttribute="trailing" id="Zgm-ci-VUN"/>
-                            <constraint firstItem="tSf-oy-zgt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ave-MS-lz4"/>
+                            <constraint firstAttribute="bottom" secondItem="tSf-oy-zgt" secondAttribute="bottom" id="5Qn-jN-KUv"/>
+                            <constraint firstItem="tSf-oy-zgt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eyn-gE-po9"/>
+                            <constraint firstItem="tSf-oy-zgt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GuB-Vv-Vbv"/>
+                            <constraint firstItem="tSf-oy-zgt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V6E-YF-i65"/>
+                            <constraint firstItem="GxQ-bS-wLG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vhc-VB-OWU"/>
+                            <constraint firstItem="GxQ-bS-wLG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l07-Vf-CEZ"/>
                         </constraints>
                     </view>
                     <connections>
