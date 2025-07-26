@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids_background" translatesAutoresizingMaskIntoConstraints="NO" id="tSf-oy-zgt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-LD-pvT">
                                 <rect key="frame" x="175" y="303" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -44,8 +47,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tSf-oy-zgt" secondAttribute="bottom" id="R7h-Ib-GVA"/>
+                            <constraint firstItem="tSf-oy-zgt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tr6-02-Hmo"/>
+                            <constraint firstAttribute="trailing" secondItem="tSf-oy-zgt" secondAttribute="trailing" id="Zgm-ci-VUN"/>
+                            <constraint firstItem="tSf-oy-zgt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ave-MS-lz4"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="tSf-oy-zgt" id="PX3-VW-kth"/>
                         <outlet property="countLabel" destination="RKo-LD-pvT" id="G9T-8w-i4t"/>
                         <outlet property="minusButton" destination="ACj-S4-BnI" id="xiT-8l-YOn"/>
                         <outlet property="plusButton" destination="TgY-9W-iR4" id="fCR-Yj-exK"/>
@@ -58,6 +68,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="kids_background" width="341.33334350585938" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

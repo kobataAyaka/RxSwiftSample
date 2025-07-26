@@ -11,6 +11,7 @@ import RxCocoa
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var backgroundView: UIImageView!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
