@@ -1,0 +1,40 @@
+## OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+Thumbs.db
+
+## Xcode
+#
+# gitignore contributors: remember to keep this file platform-agnostic
+# gitignore contributors: remember to update this file when Xcode file formats change
+
+## User-specific files
+*.xcuserdatad
+*.xccheckout
+*.moved-aside
+
+## Build generated
+build/
+DerivedData/
+
+## Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.swiftpm/
+
+## Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
