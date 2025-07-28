@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Counter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CounterViewController" id="BYZ-38-t0r" customClass="CounterViewController" customModule="RxSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,11 +58,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="tSf-oy-zgt" id="PX3-VW-kth"/>
-                        <outlet property="countLabel" destination="RKo-LD-pvT" id="G9T-8w-i4t"/>
-                        <outlet property="minusButton" destination="ACj-S4-BnI" id="xiT-8l-YOn"/>
-                        <outlet property="plusButton" destination="TgY-9W-iR4" id="fCR-Yj-exK"/>
-                        <outlet property="resetButton" destination="FFB-ZE-UuP" id="VIC-lW-rQ1"/>
+                        <outlet property="backgroundView" destination="tSf-oy-zgt" id="KcR-fW-BcP"/>
+                        <outlet property="countLabel" destination="RKo-LD-pvT" id="16T-4K-3rg"/>
+                        <outlet property="minusButton" destination="ACj-S4-BnI" id="VtW-gb-ISQ"/>
+                        <outlet property="plusButton" destination="TgY-9W-iR4" id="e85-gS-4hi"/>
+                        <outlet property="resetButton" destination="FFB-ZE-UuP" id="EHX-5m-FT0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

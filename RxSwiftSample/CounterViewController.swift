@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CounterViewController.swift
 //  RxSwiftSample
 //
 //  Created by 小幡綾加 on 7/26/25.
@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class CounterViewController: UIViewController {
 
     @IBOutlet weak var backgroundView: UIImageView!
     @IBOutlet weak var countLabel: UILabel!
