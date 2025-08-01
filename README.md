@@ -5,7 +5,8 @@
 
 ## 사용 기술
 
-- Swift (추후 Objective-C 추가 예정입니다!)
+- Swift
+- Objective-C (Bridging Header)
 - RxSwift
 - UIKit (Storyboard & Autolayout)
 
